@@ -7,6 +7,7 @@ let allIssues = [];
 //Dom
 const loginForm = document.getElementById("loginForm");
 const searchInput = document.getElementById("searchInput");
+const searchBtn = document.getElementById("searchBtn");
 const newIssueBtn = document.getElementById("newIssueBtn");
 const logoutBtn = document.getElementById("logoutBtn");
 const tabButtons = document.querySelectorAll(".tab-btn");
@@ -18,6 +19,11 @@ const issueModal = document.getElementById("issueModal");
 const modalTitle = document.getElementById("modalTitle");
 const closeModal = document.getElementById("closeModal");
 const modalContent = document.getElementById("modalContent");
+const newIssueModal = document.getElementById("newIssueModal");
+const closeNewIssueModal = document.getElementById("closeNewIssueModal");
+const newIssueForm = document.getElementById("newIssueForm");
+const cancelNewIssue = document.getElementById("cancelNewIssue");
+const errorMessage = document.getElementById("errorMessage");
 
 //Login function
 if (loginForm) {
