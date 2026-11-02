@@ -6,6 +6,9 @@ let allIssues = [];
 
 //Dom
 const loginForm = document.getElementById("loginForm");
+const searchInput = document.getElementById("searchInput");
+const newIssueBtn = document.getElementById("newIssueBtn");
+const logoutBtn = document.getElementById("logoutBtn");
 
 //Login function
 if (loginForm) {
@@ -25,3 +28,12 @@ if (loginForm) {
     }
   });
 }
+
+//Logout function
+if (logoutBtn) {
+  logoutBtn.addEventListener("click", function () {
+    localStorage.removeItem("isLoggedIn");
+    window.location.href = "./login.html";
+  });
+}
+
